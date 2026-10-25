@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Holy Impact 대학 청년 새가족 교재</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Noto+Serif+KR:wght@400;700&display=swap">
+<title>Holy Impact 프로포즈</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Noto+Serif+KR:wght@400;700&family=Nanum+Pen+Script&display=swap">
 <style>
 :root{--bg:#fff;--surf:#f2f3f5;--ink:#23262b;--sub:#6b7078;--or:#e8691a;--line:#d9dbe0;--ft:#fff;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -22,15 +22,18 @@ h1,h2{font-family:"Noto Serif KR",serif;font-weight:700;line-height:1.3;margin:0
 .title{display:flex;gap:16px;align-items:stretch;margin-bottom:28px}
 .title b{font:700 56px/1 "Noto Serif KR",serif;color:var(--or);padding-right:16px;border-right:2px solid var(--line)}
 .title span{align-self:center;font:400 30px/1.2 "Noto Serif KR",serif}
-.open{background:var(--surf);border-left:5px solid var(--or);padding:16px 18px;border-radius:0 12px 12px 0;margin-bottom:32px}
-.open small{display:block;color:var(--or);font-weight:700}
+.open{display:flex;gap:18px;align-items:flex-start;margin:0 0 36px}
+.heart{flex:none;width:82px;height:76px;position:relative;color:var(--ft);display:grid;place-items:center;text-align:center;font-size:17px;line-height:1.2;font-weight:700}
+.heart svg{position:absolute;inset:0;width:100%;height:100%}.heart span{position:relative;margin-top:-6px}
+.open p{font:400 26px/1.45 "Nanum Pen Script","Noto Sans KR",sans-serif;color:var(--or);margin:4px 0 0}
 .q{margin:36px 0}.q>p{font-weight:700;margin:0 0 10px}.q>p i{font-style:normal;color:var(--or);margin-right:8px}
 textarea{width:100%;min-height:84px;resize:vertical;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit;padding:10px 12px}
-.opt{display:block;margin:4px 0}.opt input{accent-color:var(--or);margin-right:8px}
+.opts{display:grid;gap:8px;margin-bottom:12px}.opt{display:flex;align-items:center;gap:10px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;cursor:pointer}.opt:has(input:checked){border-color:var(--or);background:var(--surf)}.opt input{accent-color:var(--or);margin-right:8px}
 blockquote{margin:12px 0 0;padding:0 0 0 14px;border-left:2px solid var(--line);color:var(--sub);font-size:15px;line-height:1.7}
 blockquote b{color:var(--or)}
-.share{background:var(--surf);border-radius:12px;padding:16px 18px;margin-top:40px}
-.share b{color:var(--or)}
+.share{background:var(--surf);border-radius:18px;padding:22px 24px 20px;margin-top:44px}
+.share .tag{display:inline-block;transform:rotate(-4deg);border:1.5px solid var(--or);color:var(--or);font:400 22px/1.3 "Nanum Pen Script","Noto Sans KR",sans-serif;padding:0 10px;border-radius:4px;background:var(--bg);margin-right:10px}
+.share p{display:inline;font:400 24px/1.5 "Nanum Pen Script","Noto Sans KR",sans-serif;color:var(--or);margin:0}.share textarea{margin-top:12px}
 .pager{display:flex;justify-content:space-between;gap:12px;margin-top:40px}
 .pager a,.start{padding:10px 18px;border-radius:10px;background:var(--or);color:var(--ft);text-decoration:none;font-weight:700}
 .pager a.ghost{background:none;color:var(--ink);border:1px solid var(--line)}
@@ -64,8 +67,33 @@ main{max-width:none;padding:0 0 80px}
 .lg button{position:relative;flex:1;padding:4px 0;border-radius:6px;border:1px solid var(--line);background:none;color:var(--ink);font:inherit;font-size:15px;line-height:1;cursor:pointer}
 .lg button::after{content:"";position:absolute;inset:-6px 0}
 .lg .bp.on{background:#c8520e;color:#fff;border-color:transparent}.lg .bs.on{background:#1f6fc0;color:#fff;border-color:transparent}
-.hint{color:var(--sub);font-size:21px;margin:8px 0 12px}
-.lm>p:first-child{font-size:24px}.lm textarea{font-size:24px}
+.hint{color:var(--sub);margin:8px 0 12px}.lm>p.hint{font-size:15px;font-weight:400}
+.lm>p:first-child{font-size:24px}.lm textarea{font-size:16px}
+.q>p.qt{display:flex;gap:12px;align-items:flex-start}
+.q>p i.n{flex:none;width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-size:14px;margin:0}
+.sub{font-weight:700;color:var(--or);margin:20px 0 2px}.hint2{display:block;color:var(--sub);font-size:14px;margin-bottom:6px}
+.rk-h{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--sub);margin-bottom:10px}
+.rk-h button{border:1px solid var(--line);background:none;color:var(--sub);border-radius:999px;padding:3px 12px;font:inherit;font-size:12.5px;cursor:pointer}
+.rk{display:grid;gap:10px}
+.ri{display:grid;grid-template-columns:40px 1fr;gap:14px;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--bg);text-align:left;font:inherit;color:inherit;width:100%}
+button.ri{cursor:pointer}.ri.on{border-color:var(--or);background:var(--surf)}
+.ri .bd{width:38px;height:38px;border-radius:50%;background:var(--surf);display:grid;place-items:center;font-weight:700;color:var(--sub)}
+.ri.on .bd{background:var(--or);color:var(--ft)}
+.ri h4{margin:0;font-size:16px}.ri .rv{font-size:14px;color:var(--sub);margin-top:4px;line-height:1.6}.ri .rv b{color:var(--or);margin-right:6px}
+.apps{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.ap{padding:16px 4px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:700 12px/1.3 "Noto Sans KR",sans-serif;cursor:pointer;word-break:keep-all}
+.ap.on{background:var(--or);border-color:var(--or);color:var(--ft)}
+.apq{margin-top:16px}.apq b{color:var(--or)}
+.apt{margin:32px 0 0;color:var(--sub);font-size:13px;letter-spacing:.2em}
+.gh{font:700 13px "Noto Sans KR",sans-serif;color:var(--or);letter-spacing:.2em;margin:36px 0 8px}
+.cm{border:1px solid var(--line);border-radius:14px;padding:18px 18px 12px;margin:12px 0}
+.cm h3{margin:0 0 6px;font:700 18px/1.4 "Noto Sans KR",sans-serif}
+.dp{margin-left:8px;font-size:12px;color:var(--ft);background:var(--or);border-radius:999px;padding:1px 9px;vertical-align:2px}
+.cm p{margin:0 0 10px;color:var(--sub);font-size:15px;line-height:1.7}
+.cm dl{margin:0;font-size:14px}.cm dl div{display:flex;gap:10px;padding:3px 0}.cm dt{flex:none;width:34px;color:var(--or);font-weight:700}.cm dd{margin:0;overflow-wrap:anywhere}.cm a{color:var(--ink)}
+.dc{padding:18px 0;border-bottom:1px solid var(--line)}.dc h3{margin:0 0 6px;font:700 20px "Noto Serif KR",serif}.dc h3 small{color:var(--sub);font:400 14px "Noto Sans KR",sans-serif;margin-left:8px}.dc p{margin:0}
+.inf{font-size:15px;line-height:1.8}.inf h4{margin:22px 0 6px;font-size:16px}.inf p{margin:0 0 10px}.inf ul{margin:0 0 10px;padding-left:4px;list-style:none;color:var(--sub)}.share:has(p:empty){display:none}
+.sh4{margin:24px 0 4px;font-size:17px;font-weight:700}.bp{margin:6px 0 10px;font-size:15.5px}.kp{font-size:17px;font-weight:500;line-height:1.8;margin:24px 0 8px}
 </style>
 </head>
 <body>
@@ -77,11 +105,11 @@ const H={1:null,2:"tree",3:"tree",4:"jesus",5:"spirit",6:"bible",7:"church"};
 const L=[
 {en:"INVITATION",ko:"초대",open:"사람들은 다 자기 나름의 색깔을 가지고 있습니다. 하나님께서 고유하게 주신 색깔을 드러낼 때, 자신감과 행복을 찾게 됩니다.",
  qs:[{q:"당신이 좋아하는 색깔은 무엇입니까? 그 색깔을 좋아하는 이유를 형용사 3가지로 말해주세요."},
- {q:"스마트폰 화면에서 앱 3개를 선택하고, 그 질문에 대해 나누어 봅시다.",opts:["MY WORK: 어떤 일을 하고 계신가요? 관심분야는?","처음 교회를 나오게 된 계기는?","IDEAL TYPE: 당신의 이상형은?","WELCOME TO ONNURI: 온누리교회의 첫 인상은?","TV & MOVIE: 자주 보는 TV프로그램, 마음에 든 영화는?","MY NICKNAME: 당신의 별명은?","7 WEEKS: 7주 동안 만남을 통해 기대하는 바는?","WISH LIST: 지금 가장 갖고 싶은 것은?","1 MEMORY: 인생 중 가장 추웠던 기억은?","2 MEMORY: 인생 중 가장 따뜻했던 기억은?","7 DAYS: 7일간 휴가가 주어진다면 무엇을 하고 싶은가요?"]},
+ {q:"스마트폰 화면에서 앱 3개를 선택하고, 그 질문에 대해 나누어 봅시다.",m:"apps",opts:["MY WORK: 어떤 일을 하고 계신가요? 관심분야는?","U: 처음 교회를 나오게 된 계기는?","IDEAL TYPE: 당신의 이상형은?","WELCOME TO ONNURI: 온누리교회의 첫 인상은?","TV & MOVIE: 자주 보는 TV프로그램, 마음에 든 영화는?","MY NICKNAME: 당신의 별명은?","7 WEEKS: 7주 동안 만남을 통해 기대하는 바는?","ABOUT CHURCH: 온누리교회를 나오게 된 계기는?","WISH LIST: 지금 가장 갖고 싶은 것은?","1 MEMORY: 인생 중 가장 추웠던 기억은?","2 MEMORY: 인생 중 가장 따뜻했던 기억은?","7 DAYS: 7일간 휴가가 주어진다면 무엇을 하고 싶은가요?"]},
  {q:"교회는 또 하나의 가족입니다. 우리 모두는 하나님 아버지 안에서 형제자매입니다. 당신은 새로운 가족을 환영할 마음의 준비가 되었습니까?",v:[["에베소서 2:19","그러므로 이제 여러분은 더 이상 낯선 사람들이거나 나그네들이 아니라 성도들과 동등한 시민이요, 하나님의 가족입니다."]]}],
  share:"온누리교회 대학청년부에 들어가면서 기대하는 바가 있다면 함께 나누어 봅시다."},
 {en:"GOD",ko:"하나님",open:"‘하나님’하면 생각나는 단어는 무엇입니까? 3가지씩 나눠 봅시다.",
- qs:[{q:"하나님(신)의 존재에 대한 당신의 생각은 어떤 것입니까? 그렇게 생각하는 이유는 무엇입니까?",opts:["유신론: 하나님은 존재한다.","무신론: 하나님은 존재하지 않는다.","불가지론: 하나님이 존재하는지 알 수 없다."],note:"신과 인간의 관계는 유치원생과 대학교수의 관계에 비유할 수 있습니다. 유치원생이 교수의 이론을 다 이해하지 못한다고 틀렸다고 할 수는 없습니다. 교수가 눈높이를 낮춰 주는 만큼 대화할 수 있듯, 하나님이 눈높이를 맞추어 다가오시면 우리는 그분을 만나고 경험할 수 있습니다."},
+ qs:[{q:"하나님(신)의 존재에 대한 당신의 생각은 어떤 것입니까? 그렇게 생각하는 이유는 무엇입니까?",m:"choice",opts:["유신론: 하나님은 존재한다.","무신론: 하나님은 존재하지 않는다.","불가지론: 하나님이 존재하는지 알 수 없다."],note:"신과 인간의 관계는 유치원생과 대학교수의 관계에 비유할 수 있습니다. 유치원생이 교수의 이론을 다 이해하지 못한다고 틀렸다고 할 수는 없습니다. 교수가 눈높이를 낮춰 주는 만큼 대화할 수 있듯, 하나님이 눈높이를 맞추어 다가오시면 우리는 그분을 만나고 경험할 수 있습니다."},
  {q:"성경은 하나님께서 이 땅을 창조하셨다고 선언합니다. 하나님은 이 세상을 어떻게 만드셨습니까?",v:[["창세기 1:3","하나님께서 말씀하시기를 “빛이 있으라”하시니 빛이 생겼습니다."],["창세기 2:2-3","하나님께서는 그 하시던 일을 일곱째 날에 다 마치셨습니다. 그리고 그 하시던 모든 일을 마치고 일곱째 날에 쉬셨습니다. 하나님께서 일곱째 날을 복 주시고 거룩하게 하셨습니다. 하나님께서 창조하시고 만드시던 모든 일을 마치시고 이날에 쉬셨기 때문입니다."]],note:"하나님은 6일 동안 그분의 능력의 말씀으로 아무것도 없는 것 중에서 만물을 지으셨는데, 매우 좋게 만드셨습니다."},
  
  {q:"하나님이 창조하신 것들 중 최고의 작품은 무엇이라 생각하는지 나누어 봅시다.",v:[["창세기 2:7","여호와 하나님께서 땅에서 취하신 흙으로 사람을 빚으시고 그 코에 생기를 불어넣으시자 사람이 생명체가 됐습니다."],["창세기 1:27-28","하나님께서 사람을 그분의 형상대로 창조하시니, 곧 하나님의 형상대로 사람을 창조하시되 하나님께서 그들을 남자와 여자로 창조하셨습니다. 하나님께서 그들에게 복을 주시며 그들에게 말씀하시기를 “자식을 많이 낳고 번성해 땅에 가득하고 땅을 정복하라. 바다의 물고기와 공중의 새와 땅 위에 기는 모든 생물을 다스리라.” 하셨습니다."]],note:"당신은 하나님이 지으신 하나님의 형상(Image of God)입니다."}],
@@ -93,37 +121,46 @@ const L=[
  {q:"당신의 미래에 대해 특별히 불안함을 느끼는 부분은 어떤 것이 있습니까?",note:"아기가 엄마 품에서 세상 그 어떤 것과도 비교할 수 없는 평안을 머금고 잠을 자듯, 우리가 하나님의 품에 안길 때 인생의 불안에서 벗어나 참된 평안을 얻을 수 있습니다."}],
  share:"이 세상이 죄로 타락했다고 생각하십니까? 특별히 언제 그런 생각이 드는지 나누어 봅시다."},
 {en:"JESUS",ko:"예수님",open:"믿음의 자세로 예수님을 영접하기만 하면 구원의 은혜가 임합니다. 성경은 모든 사람에게 구원의 길이 열려 있다고 말합니다.",
- qs:[{q:"사람은 누구나 그 한계가 명확합니다. 사람들은 죄로 인해 어떤 상태에 있습니까?",v:[["로마서 6:23","죄의 대가는 죽음이요, 하나님의 은사는 그리스도 예수 우리 주 안에 있는 영생입니다."]]},
+ qs:[{q:"사람은 누구나 그 한계가 명확합니다. 사람들은 죄로 인해 어떤 상태에 있습니까?",v:[["창세기 2:17","그러나 선과 악을 알게 하는 나무의 열매는 먹지 마라. 그것을 먹는 날에는 네가 반드시 죽을 것이다."],["로마서 6:23","죄의 대가는 죽음이요, 하나님의 은사는 그리스도 예수 우리 주 안에 있는 영생입니다."]]},
  {q:"구약 사람들은 어떻게 죄의 대가인 죽음으로부터 벗어날 수 있었습니까?",v:[["레위기 4:34-35","제사장은 속죄제물의 피를 찍어다가 번제단의 뿔에 바르고 그 나머지 피는 제단 밑에 쏟아 부어야 한다. 그는 그 모든 기름을 화목제물에서 기름을 제거한 것 같이 이 예물의 모든 기름을 떼어 내야 한다. 제사장은 그것을 제단 위에서 여호와와의 화제와 함께 태워야 한다. 제사장이 그가 지은 죄를 위해 속죄하면 그는 용서받을 것이다."]],note:"인간을 구원할 수 있는 분은 완전한 제사장이어야 하고, 그 제물 역시 흠 없고 정결해야 합니다. 이 두 조건을 완벽하게 충족시키시는 분이 바로 예수 그리스도입니다."},
- {q:"예수님은 왜 십자가에서 죽으셔야 했을까요?",v:[["이사야 53:5","우리의 허물이 그를 찔렀고 우리의 악함이 그를 짓뭉갰다. 그가 책망을 받아서 우리가 평화를 누리고 그가 매를 맞아서 우리의 병이 나은 것이다."]]},
- {q:"예수님의 죽음으로 인해 하나님과 우리 사이에 일어난 변화는 무엇입니까?",v:[["에베소서 2:14-16","그리스도는 우리의 화평이시니 자기의 육체로 둘을 하나로 만드신 분이십니다. 그분은 중간에 막힌 담, 곧 원수된 것을 헐어 내셨고 조문으로 된 계명의 율법을 폐하셨습니다. 이는 그리스도가 그분 안에서 이 둘로 한 새 사람을 창조해 화평을 이루게 하시고 십자가를 통해 이 둘을 한 몸으로 하나님과 화목하게 하셔서 자기 안에서 원수된 것을 없애 버리시기 위한 것입니다."],["누가복음 23:42-43","그리고 말했습니다. “예수여, 당신의 나라에 들어가실 때 저를 기억해 주십시오.” 예수께서 그에게 대답하셨습니다. “내가 진실로 네게 말한다. 오늘 네가 나와 함께 낙원에 있을 것이다.”"],["로마서 8:31-34","그러면 이 일에 대해 우리가 무슨 말을 하겠습니까? 하나님께서 우리를 위하시면 누가 우리를 대적하겠습니까? 자기 아들을 아끼지 않으시고 우리 모두를 위해 내어 주신 분께서 어떻게 아들과 함께 모든 것을 우리에게 은혜로 주지 않으시겠습니까? 누가 하나님께서 택하신 자들을 고소할 수 있겠습니까? 의롭다고 인정하신 분은 하나님이십니다. 누가 정죄하겠습니까? 죽었을 뿐 아니라 살리심을 받으신 분은 그리스도 예수십니다. 그분은 하나님 오른편에 계시며 우리를 위해 간구하십니다."]],note:"이제 당신은 예수 그리스도로 말미암아 당신의 죄가 모두 용서받았다고 믿습니까? 사랑은 표현하는 것이고, 신앙은 고백하는 것입니다. 당신이 자신의 믿음을 표현할 수 있는 말들을 써봅시다."},
- {q:"예수 그리스도를 주님으로 영접하고 내 인생의 통치권을 예수님께 드릴 때, 내 심령 안에서는 이미 변화가 일어난 것입니다. 그 변화의 구체적 모습은 어떻게 나타납니까?",opts:["인생 주인의 변화: 내 인생의 주인이 누구로부터 누구로 바뀌었습니까?","인격과 성품의 변화","추구하는 영역의 변화"],v:[["골로새서 2:6-7","그러므로 여러분은 그리스도 예수를 주로 영접한 것처럼 주 안에서 사십시오. 여러분은 주 안에 뿌리를 내리며 세움을 받으며 가르침을 받은 대로 믿음 안에 굳게 서서 감사가 넘치게 하십시오."],["베드로후서 1:4-7","그분은 우리에게 보배롭고 지극히 큰 약속을 주셨는데 이는 이것들을 통해 여러분이 세상의 정욕 가운데 썩어져 가는 것을 피하고 신의 성품에 참여하는 사람들이 되게 하려는 것입니다. 그러므로 여러분은 더욱 힘써 믿음에 덕을, 덕에 지식을, 지식에 절제를, 절제에 인내를, 인내에 경건을, 경건에 형제 우애를, 형제 우애에 사랑을 공급하십시오."],["로마서 8:5-6","육신을 따라 사는 사람은 육신의 일을 생각하지만 성령을 따라 사는 사람은 성령의 일을 생각합니다. 육신의 생각은 죽음이지만 성령의 생각은 생명과 평안입니다."],["디모데전서 4:7-8","저속하고 헛되게 꾸며낸 이야기를 버리고 오직 경건에 이르도록 그대 자신을 단련하여라. 육체를 단련하는 것은 조금은 유익하나 경건은 모든 일에 유익하며 이 세상과 앞으로 올 세상의 생명을 약속한다."]]}],
+ {q:"예수님은 왜 십자가에서 죽으셔야 했을까요?",key:"예수님은 죽을 수 밖에 없는 우리들을 위해서 십자가를 지셨습니다. 예수님을 주님으로 고백하며 믿는 자마다 모든 죄의 저주로부터 자유를 얻습니다.",v:[["이사야 53:5","우리의 허물이 그를 찔렀고 우리의 악함이 그를 짓뭉갰다. 그가 책망을 받아서 우리가 평화를 누리고 그가 매를 맞아서 우리의 병이 나은 것이다."]]},
+ {q:"예수님의 죽음으로 인해 하나님과 우리 사이에 일어난 변화는 무엇입니까?",seq:[["v","에베소서 2:14-16","그리스도는 우리의 화평이시니 자기의 육체로 둘을 하나로 만드신 분이십니다. 그분은 중간에 막힌 담, 곧 원수된 것을 헐어 내셨고 조문으로 된 계명의 율법을 폐하셨습니다. 이는 그리스도가 그분 안에서 이 둘로 한 새 사람을 창조해 화평을 이루게 하시고 십자가를 통해 이 둘을 한 몸으로 하나님과 화목하게 하셔서 자기 안에서 원수된 것을 없애 버리시기 위한 것입니다."],["sh","이제 당신은 예수 그리스도로 말미암아 당신의 죄가 모두 용서받았다고 믿습니까?"],["v","누가복음 23:42-43","그리고 말했습니다. “예수여, 당신의 나라에 들어가실 때 저를 기억해 주십시오.” 예수께서 그에게 대답하셨습니다. “내가 진실로 네게 말한다. 오늘 네가 나와 함께 낙원에 있을 것이다.”"],["v","로마서 8:31-34","그러면 이 일에 대해 우리가 무슨 말을 하겠습니까? 하나님께서 우리를 위하시면 누가 우리를 대적하겠습니까? 자기 아들을 아끼지 않으시고 우리 모두를 위해 내어 주신 분께서 어떻게 아들과 함께 모든 것을 우리에게 은혜로 주지 않으시겠습니까? 누가 하나님께서 택하신 자들을 고소할 수 있겠습니까? 의롭다고 인정하신 분은 하나님이십니다. 누가 정죄하겠습니까? 죽었을 뿐 아니라 살리심을 받으신 분은 그리스도 예수십니다. 그분은 하나님 오른편에 계시며 우리를 위해 간구하십니다."],["sh","사랑은 표현하는 것입니다. 그리고 신앙은 고백하는 것입니다. 당신이 자신의 믿음을 표현할 수 있는 말들을 써봅시다."],["k","예수님께서는 나를 사랑하셔서 십자가에 달려 돌아가셨습니다. 그 사랑으로 인해 우리는 죄사함과 구원을 얻었고, 영생을 얻었으며, 하나님의 자녀가 되었습니다. 하나님은 지금도 당신을 단 한순간도 놓치지 않으시며 사랑으로 인도하십니다. 이제 우리가 그분께 믿음과 사랑의 표현을 하는 것이 마땅합니다."]]},
+ {q:"예수 그리스도를 주님으로 영접하고 내 인생의 통치권을 예수님께 드릴 때, 내 심령 안에서는 이미 변화가 일어난 것입니다. 그 변화의 구체적 모습은 어떻게 나타납니까?",m:"areas",opts:["인생 주인의 변화: 내 인생의 주인이 누구로부터 누구로 바뀌었습니까?","인격과 성품의 변화","추구하는 영역의 변화"],v:[["골로새서 2:6-7","그러므로 여러분은 그리스도 예수를 주로 영접한 것처럼 주 안에서 사십시오. 여러분은 주 안에 뿌리를 내리며 세움을 받으며 가르침을 받은 대로 믿음 안에 굳게 서서 감사가 넘치게 하십시오."],["베드로후서 1:4-7","그분은 우리에게 보배롭고 지극히 큰 약속을 주셨는데 이는 이것들을 통해 여러분이 세상의 정욕 가운데 썩어져 가는 것을 피하고 신의 성품에 참여하는 사람들이 되게 하려는 것입니다. 그러므로 여러분은 더욱 힘써 믿음에 덕을, 덕에 지식을, 지식에 절제를, 절제에 인내를, 인내에 경건을, 경건에 형제 우애를, 형제 우애에 사랑을 공급하십시오."],["로마서 8:5-6","육신을 따라 사는 사람은 육신의 일을 생각하지만 성령을 따라 사는 사람은 성령의 일을 생각합니다. 육신의 생각은 죽음이지만 성령의 생각은 생명과 평안입니다."],["디모데전서 4:7-8","저속하고 헛되게 꾸며낸 이야기를 버리고 오직 경건에 이르도록 그대 자신을 단련하여라. 육체를 단련하는 것은 조금은 유익하나 경건은 모든 일에 유익하며 이 세상과 앞으로 올 세상의 생명을 약속한다."]]}],
  share:"나의 죄가 용서받았다는 믿음과 사랑을 나의 말로 표현해 봅시다."},
 {en:"SPIRIT",ko:"성령님",open:"보이는 세계는 보이지 않는 세계에 의해 움직입니다. 사랑, 우정, 꿈, 비전, 열정 등은 보이지 않지만 이것들이 세상을 움직입니다. 영적인 세계 가운데 한편으로는 악령이 존재하며, 또한 성령님도 분명히 존재하십니다.",
  qs:[{q:"성령님은 어떤 분일까요?",note:"예수님께서는 성령님을 보혜사(Parakletos)로 소개하셨습니다. ‘늘 곁에 있어서 어떤 사람을 돕거나 변호하기 위해 부름 받은 사람’을 뜻합니다. 성령님은 예수 그리스도를 증거하는 증인이며 변호인이십니다."},
- {q:"성령님이 하시는 일입니다. 당신에게 가장 필요하다고 생각하는 것을 순서대로 적어보고 나누어 봅시다.",opts:["예수님을 주님으로 고백하게 하십니다. (고린도전서 12:3)","죄를 깨닫게 하십니다. (요한복음 16:8)","우리가 하나님의 자녀임을 증거하십니다. (로마서 8:16)","합당한 예배를 드리게 하십니다. (요한복음 4:24)","권능을 주십니다. (사도행전 1:8)","말씀을 깨닫게 하십니다. (베드로후서 1:21)","평안을 주십니다. (이사야 63:14)"],v:[["고린도전서 12:3","그러므로 나는 여러분에게 알려 드립니다. 하나님의 영으로 말하는 사람은 아무도 “예수는 저주받은 사람이다” 라고 할 수 없고 또 성령으로 말미암지 않고는 “예수는 주이시다” 라고 할 수 없습니다."],["요한복음 16:8","보혜사가 오시면 죄에 대해, 의에 대해, 심판에 대해 세상을 책망하실 것이다."],["로마서 8:16","성령은 친히 우리의 영과 더불어 우리가 하나님의 자녀임을 증거합니다."],["요한복음 4:24","하나님은 영이시니 하나님께 예배드리는 사람은 영과 진리로 예배드려야 한다."],["사도행전 1:8","그러나 성령께서 너희에게 오시면 너희가 권능을 받고 예루살렘과 온 유대와 사마리아와 땅 끝까지 이르러 내 증인이 될 것이다."],["베드로후서 1:21","예언은 언제나 사람의 뜻을 따라 나온 것이 아니라 성령의 감동하심을 받은 사람들이 하나님께 받은 말씀을 전한 것이기 때문입니다."],["이사야 63:14","평원으로 내려가는 소 떼처럼 여호와의 영이 그들을 쉬게 하셨다. 주께서 이렇게 주의 백성을 인도하셔서 그 이름을 스스로 영광스럽게 하셨다."]]},
- {q:"성령 충만한 사람의 삶은 어떤 모습일까요?",note:"성령충만이란 성령님께 온전히 다스림을 받는 상태를 말합니다. 은사는 ‘은혜로 주시는 선물’이며 교회의 유익을 위해 사용합니다. 성령의 열매는 우리의 성품이 예수 그리스도의 성품으로 변화되는 것입니다.",v:[["에베소서 5:18","또한 술에 취하지 마십시오. 잘못하면 방탕에 빠지기 쉽습니다. 오히려 성령으로 충만하게 되십시오."],["고린도전서 12:7-11","각 사람에게 성령을 나타내시는 것은 성도 공동의 유익을 위한 것입니다. 어떤 이에게는 성령으로 지혜의 말씀을 주시고 어떤 이에게는 같은 성령으로 지식의 말씀을 주십니다. 어떤 이에게는 같은 성령으로 믿음을, 어떤 이에게는 같은 성령으로 치유의 은사를, 어떤 이에게는 능력 행하는 은사를, 어떤 이에게는 예언하는 은사를, 어떤 이에게는 영을 분별하는 은사를, 어떤 이에게는 여러 가지 방언하는 은사를, 또 어떤 이에게는 방언 통역하는 은사를 주십니다. 그러나 이 모든 것을 행하시는 이는 한 분이신 같은 성령이시며 그분이 원하시는대로 각 사람에게 은사를 나눠 주시는 것입니다."],["갈라디아서 5:22-23","그러나 성령의 열매는 사랑과 기쁨과 화평과 오래 참음과 친절과 선함과 신실함과 온유와 절제입니다. 이런 것들을 금지할 율법은 없습니다."]]},
+ {q:"성령님이 하시는 일입니다. 당신에게 가장 필요하다고 생각하는 것을 순서대로 적어보고 나누어 봅시다.",m:"rank",opts:["예수님을 주님으로 고백하게 하십니다. (고린도전서 12:3)","죄를 깨닫게 하십니다. (요한복음 16:8)","우리가 하나님의 자녀임을 증거하십니다. (로마서 8:16)","합당한 예배를 드리게 하십니다. (요한복음 4:24)","권능을 주십니다. (사도행전 1:8)","말씀을 깨닫게 하십니다. (베드로후서 1:21)","평안을 주십니다. (이사야 63:14)"],v:[["고린도전서 12:3","그러므로 나는 여러분에게 알려 드립니다. 하나님의 영으로 말하는 사람은 아무도 “예수는 저주받은 사람이다” 라고 할 수 없고 또 성령으로 말미암지 않고는 “예수는 주이시다” 라고 할 수 없습니다."],["요한복음 16:8","보혜사가 오시면 죄에 대해, 의에 대해, 심판에 대해 세상을 책망하실 것이다."],["로마서 8:16","성령은 친히 우리의 영과 더불어 우리가 하나님의 자녀임을 증거합니다."],["요한복음 4:24","하나님은 영이시니 하나님께 예배드리는 사람은 영과 진리로 예배드려야 한다."],["사도행전 1:8","그러나 성령께서 너희에게 오시면 너희가 권능을 받고 예루살렘과 온 유대와 사마리아와 땅 끝까지 이르러 내 증인이 될 것이다."],["베드로후서 1:21","예언은 언제나 사람의 뜻을 따라 나온 것이 아니라 성령의 감동하심을 받은 사람들이 하나님께 받은 말씀을 전한 것이기 때문입니다."],["이사야 63:14","평원으로 내려가는 소 떼처럼 여호와의 영이 그들을 쉬게 하셨다. 주께서 이렇게 주의 백성을 인도하셔서 그 이름을 스스로 영광스럽게 하셨다."]]},
+ {q:"성령 충만한 사람의 삶은 어떤 모습일까요?",seq:[["h","① 성령 충만한 삶"],["p","성령충만이란 성령님께 온전히 다스림을 받는 상태를 말합니다. 즉 성령님을 늘 인정하며 성령님의 인도와 지시하심에 순종하며 살아가는 삶을 의미합니다. 성령 충만은 그리스도인들에게 선택이 아닌 필수입니다."],["v","에베소서 5:18","또한 술에 취하지 마십시오. 잘못하면 방탕에 빠지기 쉽습니다. 오히려 성령으로 충만하게 되십시오."],["h","② 성령의 은사"],["p","은사란 ‘은혜로 주시는 선물’이란 뜻입니다. 성령님께서는 교회의 유익을 위하여 그분의 뜻대로 다양한 은사를 나누어 주십니다. 은사를 받았다고 하여 다른 사람과 비교하거나 교만해하지 말고 자신에게 주신 은사를 유익을 위해 사용하는 것이 중요합니다."],["v","고린도전서 12:7-11","각 사람에게 성령을 나타내시는 것은 성도 공동의 유익을 위한 것입니다. 어떤 이에게는 성령으로 지혜의 말씀을 주시고 어떤 이에게는 같은 성령으로 지식의 말씀을 주십니다. 어떤 이에게는 같은 성령으로 믿음을, 어떤 이에게는 같은 성령으로 치유의 은사를, 어떤 이에게는 능력 행하는 은사를, 어떤 이에게는 예언하는 은사를, 어떤 이에게는 영을 분별하는 은사를, 어떤 이에게는 여러 가지 방언하는 은사를, 또 어떤 이에게는 방언 통역하는 은사를 주십니다. 그러나 이 모든 것을 행하시는 이는 한 분이신 같은 성령이시며 그분이 원하시는대로 각 사람에게 은사를 나눠 주시는 것입니다."],["h","③ 성령의 열매"],["p","열매를 맺는다는 것은 우리의 성품이 예수 그리스도의 성품으로 변화되는 것을 말합니다. 열매는 우리가 성령님을 좇아 행할 때 맺어지는 것입니다. 성령의 아홉가지 열매는 성령 충만한 성도들에게서 나타나는 인격적인 열매입니다."],["v","갈라디아서 5:22-23","그러나 성령의 열매는 사랑과 기쁨과 화평과 오래 참음과 친절과 선함과 신실함과 온유와 절제입니다. 이런 것들을 금지할 율법은 없습니다."]]},
  {q:"성령님을 사모하십시오.",note:"성령님께 시간을 드리십시오. 마음을 드리십시오. 성령님은 사모하는 영혼을 만족시키시고 충만하게 임하십니다."}],
  share:"내가 경험한 성령님에 대해 나누어 봅시다."},
 {en:"BIBLE",ko:"성경",open:"전 세계 도서 중 최고의 베스트셀러는 무엇일까요? 성경입니다. 과연 성경이 어떤 책이길래 이런 일들이 일어났는지 구체적으로 살펴봅시다.",
  qs:[{q:"‘성경’하면 떠오르는 이미지는 어떤 것입니까?",note:"성경은 순수하고 무조건적인 사랑의 근원, 바로 하나님의 사랑을 보여주는 당신을 향한 러브레터입니다."},
  {q:"성경의 저자는 누구입니까?",v:[["디모데후서 3:16","모든 성경은 하나님의 감동으로 된 것으로 교훈과 책망과 바르게 함과 의로 교육하기에 유익하니"],["베드로후서 1:21","예언은 언제나 사람의 뜻을 따라 나온 것이 아니라 성령의 감동하심을 받은 사람들이 하나님께 받은 말씀을 전한 것이기 때문입니다."]],note:"성경의 구약은 선지자, 신약은 사도들이 썼습니다. 이들은 모두가 하나님의 감동을 받은 사람들입니다. 그러므로 성경의 저자는 성령님이십니다."},
  {q:"당신은 성경이 순전한 하나님의 말씀이라 믿습니까? 그리고 이것이 신앙생활 하는 데에 왜 중요한지 나누어 봅시다.",v:[["데살로니가전서 2:13","또한 우리가 하나님께 끊임없이 감사드리는 것은 여러분이 우리에게서 들은 하나님의 말씀을 받을 때 사람의 말로 받지 않고 실제 하나님의 말씀으로 받아들였기 때문입니다."]]},
- {q:"말씀이 우리에게 주시는 유익입니다. 이 중 당신이 최근에 체험했던 것은 무엇입니까?",v:[["시편 119:9, 11","청년이 어떻게 그 길을 깨끗하게 지킬 수 있겠습니까? 주의 말씀을 따라 주의하는 것입니다. 내가 주께 죄짓지 않으려고 주의 말씀을 마음에 품었습니다."],["시편 119:105","주의 말씀은 내 발의 등불이요, 내 길의 빛입니다."],["히브리서 4:12-13","하나님의 말씀은 살아 있고 힘이 있으며 양날 선 어떤 칼보다도 더 예리해 혼과 영과 관절과 골수까지 찔러 쪼개기까지 하며 마음의 생각과 의도를 분별해냅니다. 그러므로 어떤 피조물이라도 하나님 앞에 숨을 수 없고 오히려 모든 것은 우리에게서 진술을 받으실 그분의 눈앞에 벌거벗은 채 드러나 있습니다."],["에베소서 6:13, 17","그러므로 하나님의 전신갑주를 입으십시오. 이는 여러분이 악한 날에 능히 대적하고 모든 것을 행한 후에 굳건히 서기 위한 것입니다. 구원의 투구와 성령의 검, 곧 하나님의 말씀으로 무장하십시오."],["요한복음 15:10","내가 내 아버지의 계명을 지키고 아버지의 사랑 안에 있는 것 같이 너희도 내 계명을 지키면 내 사랑 안에 있을 것이다."]]},
- {q:"말씀을 가까이 하기에 어렵다면 그 이유는 무엇입니까?",opts:["죄로 인해 하나님 앞에 나아가기 꺼려지기 때문에","성경의 가치와 중요성을 모르기 때문에","성경을 읽는 것이 지루하고 무의미하게 느껴지기 때문에","습관이 되어 있지 않기 때문에","바쁘고 피곤하기 때문에","기타"],note:"말씀을 가까이 하는 방법으로 QT와 일대일 제자양육이 있습니다."},
+ {q:"말씀이 우리에게 주시는 유익입니다. 이 중 당신이 최근에 체험했던 것은 무엇입니까?",m:"check",opts:["깨끗한 길 (시편 119:9, 11)","발의 등불, 길의 빛 (시편 119:105)","마음을 분별하는 검 (히브리서 4:12-13)","성령의 검 (에베소서 6:13, 17)","사랑 안에 거함 (요한복음 15:10)"],v:[["시편 119:9, 11","청년이 어떻게 그 길을 깨끗하게 지킬 수 있겠습니까? 주의 말씀을 따라 주의하는 것입니다. 내가 주께 죄짓지 않으려고 주의 말씀을 마음에 품었습니다."],["시편 119:105","주의 말씀은 내 발의 등불이요, 내 길의 빛입니다."],["히브리서 4:12-13","하나님의 말씀은 살아 있고 힘이 있으며 양날 선 어떤 칼보다도 더 예리해 혼과 영과 관절과 골수까지 찔러 쪼개기까지 하며 마음의 생각과 의도를 분별해냅니다. 그러므로 어떤 피조물이라도 하나님 앞에 숨을 수 없고 오히려 모든 것은 우리에게서 진술을 받으실 그분의 눈앞에 벌거벗은 채 드러나 있습니다."],["에베소서 6:13, 17","그러므로 하나님의 전신갑주를 입으십시오. 이는 여러분이 악한 날에 능히 대적하고 모든 것을 행한 후에 굳건히 서기 위한 것입니다. 구원의 투구와 성령의 검, 곧 하나님의 말씀으로 무장하십시오."],["요한복음 15:10","내가 내 아버지의 계명을 지키고 아버지의 사랑 안에 있는 것 같이 너희도 내 계명을 지키면 내 사랑 안에 있을 것이다."]]},
+ {q:"말씀을 가까이 하기에 어렵다면 그 이유는 무엇입니까?",m:"check",opts:["죄로 인해 하나님 앞에 나아가기 꺼려지기 때문에","성경의 가치와 중요성을 모르기 때문에","성경을 읽는 것이 지루하고 무의미하게 느껴지기 때문에","습관이 되어 있지 않기 때문에","바쁘고 피곤하기 때문에","기타"],note:"말씀을 가까이 하는 방법으로 QT와 일대일 제자양육이 있습니다."},
  {q:"QT 연습: 오늘의 말씀 요한복음 15장 1-7절. 제목 / 말씀요약 / 나에게 주신 말씀과 묵상 / 기도 / 말씀 적용 및 실천해보기 순서로 기록해 봅시다.",note:"QT는 Quiet Time의 약자로, 매일 조용한 시간과 장소를 정해 하나님을 인격적으로 만나고, 성경 말씀을 통해 나를 향한 하나님의 음성을 듣고 묵상하며 삶에 적용함으로써 삶의 변화와 성장을 이루고자 하는 경건훈련입니다."}],
  share:"말씀이 분명하고 실제적으로 마음에 와닿은 적이 있었습니까? 그리고 현재 당신의 삶에 파고드는 말씀이 있다면 그 말씀은 무엇입니까?"},
 {en:"CHURCH",ko:"교회",open:"1983년, 하용조 목사는 한국에서 목회를 해보지 않겠느냐는 제의를 받았습니다. ‘2천 년이 지난 지금도 주님이 의도하시고 사도행전에서 보여 주셨던 그 교회가 가능할까?’ 그 응답으로 소그룹 성경공부가 시작되었고, 사도행전적 공동체로 성숙해 갔습니다.",
  qs:[{q:"당신이 생각하는 이상적인 교회 공동체는 어떤 모습입니까?"},
  {q:"성경이 말하는 교회는 무엇인지 생각해봅시다.",v:[["고린도전서 3:16","여러분은 자신이 하나님의 성전인 것과 하나님의 성령께서 여러분 안에 계시는 것을 알지 못합니까?"],["에베소서 2:20-22","여러분은 사도들과 예언자들의 기초 위에 세워진 사람들이요, 그리스도 예수께서 친히 모퉁잇돌이 되셨습니다. 그리스도 안에서 건물 전체가 서로 연결돼 주 안에서 함께 자라 거룩한 성전이 됩니다. 여러분도 성령 안에서 하나님께서 거하실 처소가 되기 위해 그리스도 안에서 함께 세워져 가고 있습니다."]]},
- {q:"교회의 목적은 무엇입니까?",opts:["예배 (요한계시록 4:11)","양육 (에베소서 4:13)","사역 (디모데전서 5:10)","선교 (사도행전 1:8)"],v:[["요한계시록 4:11","주 우리 하나님이시여, 영광과 존귀와 능력을 받으시기에 합당하십니다. 주께서 만물을 창조하셨고 주의 기쁘신 뜻을 인해 만물이 존재했고 또 창조됐습니다."],["에베소서 4:13","우리는 모두 하나님의 아들을 믿는 것과 아는 지식에 하나가 돼 온전한 사람을 이루어 그리스도께서 충만하신 정도까지 도달해야 합니다."],["디모데전서 5:10","또 그는 선한 행실들로 인정을 받는 사람이어야 한다. 곧 자녀를 잘 부양했든지 나그네를 잘 대접했든지 성도들의 발을 씻겼든지 환난당한 사람들을 구제했든지 모든 선한 일에 헌신한 사람이어야 한다."],["사도행전 1:8","그러나 성령께서 너희에게 오시면 너희가 권능을 받고 예루살렘과 온 유대와 사마리아와 땅 끝까지 이르러 내 증인이 될 것이다."]]}],
- share:"위의 4가지 목적들 가운데 당신의 교회 생활 중에 미흡한 부분은 무엇입니까?"}
+ {q:"교회의 목적은 무엇입니까?",m:"plain",sh:"위의 4가지 목적들 가운데 당신의 교회 생활 중에 미흡한 부분은 무엇입니까?",opts:["예배 (요한계시록 4:11)","양육 (에베소서 4:13)","사역 (디모데전서 5:10)","선교 (사도행전 1:8)"],v:[["요한계시록 4:11","주 우리 하나님이시여, 영광과 존귀와 능력을 받으시기에 합당하십니다. 주께서 만물을 창조하셨고 주의 기쁘신 뜻을 인해 만물이 존재했고 또 창조됐습니다."],["에베소서 4:13","우리는 모두 하나님의 아들을 믿는 것과 아는 지식에 하나가 돼 온전한 사람을 이루어 그리스도께서 충만하신 정도까지 도달해야 합니다."],["디모데전서 5:10","또 그는 선한 행실들로 인정을 받는 사람이어야 한다. 곧 자녀를 잘 부양했든지 나그네를 잘 대접했든지 성도들의 발을 씻겼든지 환난당한 사람들을 구제했든지 모든 선한 일에 헌신한 사람이어야 한다."],["사도행전 1:8","그러나 성령께서 너희에게 오시면 너희가 권능을 받고 예루살렘과 온 유대와 사마리아와 땅 끝까지 이르러 내 증인이 될 것이다."]]}
+ ,{q:"예수님께서 제자들에게 주신 명령은 무엇입니까?",v:[["마태복음 22:37-39","예수께서 대답하셨습니다. “‘네 마음을 다하고 네 생명을 다하고 네 뜻을 다해 주 네 하나님을 사랑하여라.’ 이것이 가장 중요하고 으뜸 되는 계명이다. 그리고 둘째 계명도 이와 같다. ‘네 이웃을 네 몸처럼 사랑하여라.’”"],["마태복음 28:19-20","“그러므로 너희는 가서 모든 민족을 제자로 삼아 아버지의 아들과 성령의 이름으로 세례를 주고 내가 너희에게 명령한 모든 것을 그들에게 가르쳐 지키게 하라. 보라. 내가 세상 끝날까지 너희와 항상 함께 있을 것이다.”"]]},
+ {q:"온누리교회의 비전 Acts29",m:"info",html:`<p>Acts29란 사도행전 29장을 의미하는 것으로 사도행전은 28장으로 끝나지 않았고 계속 쓰여져야 한다는 의미이며, 온누리교회를 통해 이루시는 하나님의 역사가 사도행전 29장처럼 기록되기를 원한다는 꿈입니다.</p>
+<h4>(1) Acts29의 비전</h4><p>① 2000명의 선교사와 10,000명의 평신도 사역자를 일으키는 성령의 행전입니다. 2013년 1월 15일 현재까지 누계 1,465명의 선교사가 파송되었고, 현재 68개국에서 766명의 선교사가 활동중이며, 614명의 평신도 사역자가 활동 중입니다.</p><p>② 이들을 통해 세상을 변화시키는 교회를 온누리에 세워가는 것입니다. 2,000명의 선교사, 10,000명의 평신도 사역자들이 파송할 수 있는 캠퍼스 교회와 비전교회를 세워나가는 것입니다. 또한 이들을 통해 교회를 세워 세상에 복음을 전하고, 세상을 바꾸는 영향력을 주는 것입니다.</p>
+<h4>(2) Acts29의 핵심가치</h4><ul><li>① 교회를 재생산하는 건강한 교회</li><li>② 복음 전도를 위해 흩어지는 교회</li><li>③ 선교지에 교회를 세우는 교회</li></ul>
+<h4>(3) Acts29 비전의 네가지 축</h4><p><b>① Acts29 비전빌리지</b></p><ul><li>선교사 훈련을 중요시하는 선교사 사관학교</li><li>안식년 선교사들의 휴식과 재충전의 재훈련 과정</li><li>평신도들의 업그레이드를 위한 영성 훈련장</li></ul>
+<p><b>② CGNTV(Christian Global Network Television 위성방송)</b></p><ul><li>인공위성 8개를 통한 글로벌 네트워크</li><li>해외 1만 3천여명의 한인 선교사와 670만 해외동포를 위해 Dream-On캠페인과 네트워크 사역 진행</li><li>권역별 주요 편성 시간대에는 다국어 방송(8개국어)</li></ul>
+<p><b>③ 온누리 비전교회</b></p><ul><li>지역 속에 들어가 연약한 교회들을 격려하며 돕는 것</li><li>국내외 지역 교회들과의 협력과 매트릭스 팀워크를 통해 인력과 자원을 공유하는 것</li><li>교파와 교단의 벽을 넘어서서 상호간에 목회적 소프트웨어를 공유하는 것</li></ul>
+<p><b>④ 사회참여</b></p><ul><li>외국인 노동자 사역의 M센터 교회</li><li>문화 복지 사역에 참여하는 교회</li><li>온누리 긴급 재난 Lamp-On</li></ul>
+<h4>(4) 교회 개척 현황</h4><p><b>① 국내 캠퍼스 교회 - 14개</b><br>서빙고, 양재, 부천, 수원, 대전, 남양주, 평택, 인천, 강동, 용인, 서산, 영종, 제주, M센터</p><p><b>② 해외 비전교회 - 30개</b><br>미주 : 얼바인, 산타모니카, 로스앤젤레스, 샌디에고, 보스톤, 뉴욕N2, 뉴저지, 노스 시카고, 네이퍼빌 시카고, 포틀랜드, 앵커리지, 밴쿠버, 괌<br>일본 : 동경, 오사카, 우에다, 요코하마, 야치요, 나고야, 교토<br>오세아니아 : 시드니, 뉴질랜드<br>중국 : 북경, 단동, 대련, 상해, 장춘, 청도<br>동남아 : 호치민<br>중동 : 아부다비</p><p class="hint2">※ 온누리교회 홈페이지 www.onnuri.org 비전교회란 참고</p>`}],
+ share:""}
 ];
 const $=s=>document.querySelector(s),app=$("#app"),nav=$("#nav");
 const get=k=>{try{return localStorage.getItem(k)||""}catch(e){return ""}};
 const set=(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}};
 const esc=s=>s.replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
-const done=i=>L[i].qs.filter((_,j)=>get(`a${i}.${j}`).trim()||get(`o${i}.${j}`).replace(/[,\[\]]/g,"")).length;
+const done=i=>L[i].qs.filter((_,j)=>get(`a${i}.${j}`).trim()||get(`c${i}.${j}`)||(get(`r${i}.${j}`)||"[]")!="[]").length;
 const AG=["10","15","20","25","30","35","현재"],LC={ph:"#e8691a",sp:"#2783de"};let lmA="ph";
 const lmv=(r,i)=>{const v=get(`lm.${r}.${i}`);return v===""?(r=="ph"?60:40):+v};
 function LM(){lmA="ph";return `<section class="q lm"><p style="margin:0"><i style="font-style:normal;color:var(--or)">Life Map</i> 나의 인생 그래프</p><div class="lg"><button class="bp on" data-lr="ph">육적인 삶</button><button class="bs" data-lr="sp">영적인 삶</button></div><svg id="lms" viewBox="0 0 700 440" role="img" aria-label="인생 그래프"></svg><p class="hint">위에서 선택한 삶의 점을 위아래로 끌어서 그려 보세요.</p><textarea data-a="lm" placeholder="인생의 전환점이 된 순간을 적어 보세요">${esc(get("alm"))}</textarea></section>`}
@@ -139,26 +176,91 @@ function bindLM(){const s=$("#lms");if(!s)return;drawLM();let d=null;
  s.onpointerdown=e=>{const x=Yp(e)[0];d=Math.max(0,Math.min(6,Math.round((x-80)/95)));s.setPointerCapture(e.pointerId);mv(e)};
  s.onpointermove=mv;s.onpointerup=s.onpointercancel=()=>{d=null};
  document.querySelectorAll("[data-lr]").forEach(b=>b.onclick=()=>{lmA=b.dataset.lr;document.querySelectorAll("[data-lr]").forEach(x=>x.classList.toggle("on",x==b));drawLM()})}
+
+const gv=k=>{try{return JSON.parse(get("r"+k)||"[]")}catch(e){return[]}};
+const RF=/^(.*?)\s*\(([^()]+)\)$/;
+function GRP(i,j,q){const k=`${i}.${j}`,m=q.m,a=gv(k),vs=q.v||[];
+ if(m=="apps"){const it=q.opts.map(o=>o.split(/:\s*/));
+  return `<div class="grp" data-g="${k}"><div class="apps">${it.map((t,x)=>`<button class="ap${a.includes(x)?" on":""}" data-i="${x}">${t[0]}</button>`).join("")}</div>${a.map(x=>`<div class="apq"><b>${it[x][0]}</b> ${it[x][1]}<textarea data-a="${k}-${x}" placeholder="나의 생각을 적어 보세요">${esc(get(`a${k}-${x}`))}</textarea></div>`).join("")}</div>`}
+ const it=q.opts.map(o=>{const t=o.match(RF),r=t?t[2]:"",v=vs.find(z=>z[0]==r);return[t?t[1]:o,r,v&&v[1]||""]});
+ return `<div class="grp" data-g="${k}">${m=="rank"?`<div class="rk-h"><span>가장 필요한 것부터 차례로 눌러 순서를 매겨 보세요</span><button data-reset>다시 하기</button></div>`:m=="check"?`<div class="rk-h"><span>해당하는 것을 눌러 표시해 보세요</span></div>`:""}<div class="rk">${it.map((t,x)=>{const p=a.indexOf(x),on=p>=0,g=m=="plain"?"div":"button";return `<${g} class="ri${on?" on":""}" data-i="${x}"><span class="bd">${m=="rank"?(on?p+1:x+1):m=="check"?(on?"✓":x+1):x+1}</span><span><h4>${t[0]}</h4>${t[1]?`<div class="rv"><b>${t[1]}</b>${t[2]}</div>`:""}</span></${g}>`}).join("")}</div></div>`}
+const SH=(k,t)=>`<div class="share"><span class="tag">나눔</span><p>${t}</p><textarea data-a="s${k}" placeholder="나누고 싶은 이야기를 적어 보세요">${esc(get("as"+k))}</textarea></div>`;
+const SQ=(k,a)=>a.map((b,x)=>b[0]=="v"?`<blockquote><b>${b[1]}</b> ${b[2]||""}</blockquote>`:b[0]=="sh"?SH(`${k}-${x}`,b[1]):b[0]=="h"?`<h4 class="sh4">${b[1]}</h4>`:`<p class="${b[0]=="k"?"kp":"bp"}">${b[1]}</p>`).join("");
+function QS(i,j,q){const k=`${i}.${j}`,m=q.m||"",G=["rank","check","plain","apps"].includes(m);
+ const refs=G&&m!="apps"?q.opts.map(o=>(o.match(RF)||[])[2]):[];let b="";
+ if(m=="choice")b=`<div class="opts">${q.opts.map((o,x)=>`<label class="opt"><input type="radio" name="c${k}" data-c="${k}" value="${x}" ${get("c"+k)==x?"checked":""}>${"①②③"[x]} ${o}</label>`).join("")}</div>`;
+ if(G)b=GRP(i,j,q);
+ if(m=="areas")b=q.opts.map((o,x)=>{const t=o.split(/:\s*/);return `<p class="sub">${t[0]}</p>${t[1]?`<small class="hint2">${t[1]}</small>`:""}<textarea data-a="${k}-${x}" placeholder="나의 생각을 적어 보세요">${esc(get(`a${k}-${x}`))}</textarea>`}).join("");
+ if(m=="info")b=`<div class="inf">${q.html}</div>`;
+ if(!G&&m!="areas"&&m!="info")b+=`<textarea data-a="${k}" aria-label="${j+1}번 답" placeholder="나의 생각을 적어 보세요">${esc(get("a"+k))}</textarea>`;
+ return `<section class="q"><p class="qt"><i class="n">${j+1}</i>${q.q}</p>${b}${q.seq?SQ(k,q.seq):(q.v||[]).filter(v=>!refs.includes(v[0])).map(v=>`<blockquote><b>${v[0]}</b> ${v[1]||""}</blockquote>`).join("")}${q.note?`<blockquote>${q.note}</blockquote>`:""}${q.key?`<p class="kp">${q.key}</p>`:""}</section>${q.sh?SH(k,q.sh):""}`}
+const AP=[{t:"공동체 소개",en:"COMMUNITY"},{t:"온누리 사전",en:"DICTIONARY"}];
+const CG=[["서울",[
+["하늘 공동체","대학부","세상 속에 복음의 진리를 전하는 복음의 공동체. 예수님을 가장 사랑하는 예수 바보를 양성하는 공동체","주일 오후 4:30 · 온누리교회 서빙고 두란노홀(신관 B1)","02-3215-3726","","www.facebook.com/groups/OnnuriHanul"],
+["허브 공동체","대학부","거룩한 옷을 입고 즐거이 헌신함으로 새벽이슬과 같은 청년들을 세워나가는 예수바보 대학공동체","주일 오후 2:00 · 온누리교회 양재 기쁨홀","02-3215-3726","","www.facebook.com/groups/hubcommunity"],
+["Pole2 공동체","대학부","캠퍼스에 복음의 깃발을! 도시에 사랑의 깃발을! 복음과 사랑으로 세상을 변화시키는 공동체","주일 오전 10:00 · 대학로 청년희망공간 이룸","02-3215-3726","대학로 동숭아트센터 2층, 혜화역 4호선 1번출구","www.facebook.com/groups/pole2"],
+["여호수아 공동체","청년부","세상을 변화시킬 3,000명의 청년 예배 공동체를 추구하며, 세상에 복음을 전하고 하나님 나라의 꿈과 비전을 보여주는 공동체","주일 오후 4:00 · 온누리교회 양재 사랑홀","02-570-7521","","twitter@onnuri_joshua"],
+["J4U 공동체","청년부","“Just for You” 오직 한분 예수님을 기쁘시게 하는 공동체, ‘나’보다 ‘당신’을 우선하는 사랑의 공동체","주일 오전 11:30 · 온누리교회 양재 기쁨홀","02-570-7521","",""],
+["갈렙 공동체","청년부","믿음의 도전과 거룩한 모험으로 삶을 통해 세상을 변화시키는 예수바보들의 공동체","주일 오후 2:00 · 도곡교육관 숙명여고 대강당","02-570-7521","","www.icaleb.co.kr"],
+["요셉 공동체","청년부","이 땅의 청년들을 향한 하나님의 비전과 꿈을 키우고 살아 있는 예배, 말씀과 기도의 능력을 경험하며 분야별 협의체 모임을 통해 세상을 변화시키기를 꿈꾸는 공동체","토요일 오후 5:00 · 온누리교회 서빙고 본당","02-3215-3759","","www.facebook.com/onnurijoseph"],
+["길 공동체","청년부","‘젊음과 문화의 중심’ 대학로에서 주의 길을 예비하는 문화선교공동체","주일 오후 2:00 · 대학로 청년희망공간 이룸","02-3215-3759","대학로 동숭아트센터 2층, 혜화역 4호선 1번출구","www.facebook.com/gilonnuri"],
+["W 공동체","청년부","[W]orship 모든 청년들이 참여자가 되는 ‘예배’공동체 / [W]ord 삶으로 복음을 증거하는 선교사로 살아가도록 말씀으로 양육하는 ‘말씀’공동체 / [W]itness 나라와 민족 그리고 지역사회를 품고 기도하며 복음을 전하는 ‘선교’공동체","주일 오후 3:00 · 여의도 사학연금회관 2F 강당","02-3215-3759","여의도역 1번출구","www.facebook.com/Wcommunitychurch"],
+["SNS 공동체","청년부","이 시대의 빛과 소금으로 하나님을 뜨겁게 갈망하며, 열방으로 하나님을 예배하게 하는 예배와 선교 공동체","주일 오후 4:30 · 온누리교회 서빙고 B2 비전홀","02-3215-3759","","www.onnuri-sns.org"],
+["CH PLUS","대학청년부","새로운 예배 형식을 통해서 다음 세대를 준비하고 젊은이들과 공감하며 소통하는 예배","주일 오후 6:30 · 대학로 청년희망공간 이룸","02-3215-3759","대학로 한성대 에듀센터 2층, 4호선 혜화역 4번출구",""]]],
+["캠퍼스 · 지역",[
+["부천 Dream+ 공동체","","드림플러스 공동체는 하나님을 사랑하는 믿음 안에 거하고 다시 그 사랑을 나누는 하나님의 꿈을 함께 이루어가는 공동체","주일 오후 4:00 · 온누리교회 부천 본당 2F","032-322-9686","경기도 부천시 원미구 평천로 589(상동)",""],
+["수원 SEED Community","대학부","예배의 감격으로 사는 공동체, 하나님의 사랑을 세상에 심는 공동체","주일 오후 2:00 · 온누리교회 수원 4F 경찬홀","031-895-6500","경기도 용인시 기흥구 영덕동 128번지",""],
+["수원 His 공동체","청년부","예수 그리스도를 삶의 중심으로 삼고 예배하며 나아가는 공동체! 성령의 임재 가운데 가난하고 소외된 이웃, 캠퍼스, 열방을 향해 증거하는 공동체!","주일 오후 3:00 · 온누리교회 수원 2F 사랑홀","031-895-6500","경기도 용인시 기흥구 영덕동 128번지",""],
+["대전 Belief 공동체","대학부","대전에 있는 11개 대학을 품고 전도하며 예배와 양육을 통해서 실력과 영성을 키워나가는 공동체입니다","주일 오후 4:00 · 온누리교회 대전 본당 6F","042-825-3642","대전시 서구 둔산로 64","www.facebook.com/groups/beliefcommunity"],
+["대전 O2 공동체","청년부","하나님을 예배하고 세상에 나아가 영향력 있는 크리스천으로 사는 공동체, 청년지체들이 자신의 기량을 마음껏 펼칠 수 있도록 장을 마련해주고 함께 성장하는 사역공동체","주일 오후 4:00 · 온누리교회 대전 본당 6F","042-825-3642","대전시 서구 둔산로 64","www.facebook.com/groups/O2community"],
+["남양주 J1 공동체","","J1공동체는 예수님을 삶의 최우선 순위에 두고 구리 남양주 지역의 청년대학생들을 복음화하여 예배공동체와 성령공동체, 선교공동체로 ACTS29비전에 크게 기여하고자 하는 공동체","주일 오후 2:00 · 온누리교회 남양주 본당 3F","031-565-9686","경기도 구리시 이문안로 154",""],
+["평택 Makers 공동체","","성령의 임재가 있는 예배공동체! 주의 길을 예비하는 선교공동체! 예수를 바로 보여주는 Makers공동체!","주일 오후 2:00 · 온누리교회 평택 본당 3F","031-651-9680","경기도 평택시 평택4로 26번지",""],
+["인천 WEB 공동체","","동북아의 허브 인천에서 한국의 영적 부흥의 허브로 꿈꾸며 ‘ACTS29비전’과 ‘333(거룩한 300명의 예배자, 30개의 순과순장, 3명의 선교사)비전’을 가지고 달려가는 비전공동체","주일 오후 2:00 · 온누리교회 인천 프리스페이스 6F","032-437-9686","인천광역시 연수구 송도동 8-10","www.facebook.com/groups/543149745764130 (페이스북 ‘인천온누리 대청모임’ 검색)"],
+["강동 Promise U 공동체","대학부","동서울 지역 캠퍼스의 대학생들과 20대 청년들을 품고 나아갑니다. 예수 그리스도의 심장으로 세상과 열방을 향하여 거침없이 뛰어 들어가는 열정과 비전을 가진 공동체입니다","주일 오후 2:00 · 온누리교회 강동 사랑홀 10F","02-475-9686","서울시 강동구 천호3동 453-19 나비빌딩 10층","www.facebook.com/groups/207283922790614"],
+["강동 Promise 공동체","청년부","the 깊은 영성, the 아름다운 문화, the 낮은 섬김의 비전으로 하나님을 기쁘시게 하고 세상을 변화 시키는 청년들이 모인 성령공동체, 예배공동체입니다","주일 오후 2:00 · 온누리교회 강동 본당 12F","02-475-9686","서울시 강동구 천호3동 453-19 나비빌딩 12층","vision.onnuri.org/gd"],
+["영종 WAY 공동체","","","주일 오후 2:00 · 온누리교회 영종 3층 백향목홀","","",""]]]];
+const DC=[
+["등반","","세상 속에 영향력 있는 크리스천으로 살기 위한 리더십을 훈련한다."],
+["순 모임","","온누리교회를 이루는 가장 기본적인 공동체. 보통 7-12명의 인원들로 구성되는 소그룹 모임."],
+["순장","","순 모임의 인도자"],
+["아웃리치","Outreach","단기간동안 선교현장에 나가서 선교사역에 동참하는 것. 주로 현지에서 장기간 사역하고 있는 선교사의 사역을 돕는 형태나 비전트립으로 이루어지고 있다."],
+["크블","","크리스마스 블레싱의 줄임말로, 매년 크리스마스에 주변 미자립/농어촌 교회를 방문하여 성탄의 기쁜 소식을 전하고, 예수님의 사랑을 나누는 아웃리치를 말함."],
+["엠씨","MC · Ministry Coordinator","교역자를 도와 공동체 사역을 진행하는 대학청년부 공동체 임원"],
+["일대일 동반자","","일대일 제자양육에서 배우는 사람"],
+["일대일 양육자","","일대일 제자양육에서 가르치는 사람"],
+["에프에이","FA · Frontier Agency Movement","대학청년부에서 진행하는 새로운 패러다임의 단기선교훈련. 교역자와 훈련생들이 한 팀을 이루어 복음화율이 5%미만인 지역으로 나아가는 프로그램."],
+["티피","TP · Turning Point","Acts29 비전빌리지에서 진행되는 단기 선교사 훈련제도. 훈련을 마친 후 선교지로 파송되어 1,2년간 사역한다."],
+["화성","화요성령집회","화성(화요성령집회)은 매주 화요일 오후 7시 30분에 서빙고 본당에서 드리는 성령집회. 이 집회를 통해 예배드리는 모든 사람들이 사도행전에 나오는 모든 성령의 은사를 강력하게 체험하여 꿈과 환상을 보는 예배를 경험할 뿐만 아니라, 화성 전국투어를 통해 전국의 대학 캠퍼스와 미자립 교회의 예배 부흥을 꿈꾸며 섬기고 있다."],
+["바아","","바이블아카데미의 줄임말로 매년 상반기와 하반기 2회 개설되는 교육을 지칭하는 말이다. 균형잡힌 신앙을 소유한 성숙한 그리스도인을 양육하고, 비전에 헌신하는 헌신자로 양육하며, 세상 속에서 영향력 있는 크리스천 리더십으로 양육한다. 리더십 훈련과정, 성경 과정, 기독교 세계관 등 다양한 과정들이 개설된다."],
+["또래모임","","같은 생년(또래)이 함께 모여 교제하는 시간으로, 연 1~2회 진행하고 있다."],
+["던브레이커스","","매주 수요일 오전 7시, 함께 하나님의 말씀을 나누는 모임"],
+["주중중보기도","","매주 화요일 오후 8시에 모여 뜨겁게 공동체를 위해 기도하는 자리"],
+["WEBer","","인천 웹 공동체의 구성원"]];
+function APX(a){const x=AP[a-1],lk=w=>`<a href="https://${w.split(" ")[0]}" target="_blank" rel="noopener">${w}</a>`;
+ const hero=`<div class="ph solid"><div class="ph-in"><b style="font-size:34px;line-height:1.1">부록<br>${a}</b><span>${x.t}<small>${x.en}</small></span></div></div>`;
+ const body=a==1?CG.map(g=>`<div class="gh">${g[0]}</div>`+g[1].map(c=>`<div class="cm"><h3>${c[0]}${c[1]?`<span class="dp">${c[1]}</span>`:""}</h3><dl><div><dt>예배</dt><dd>${c[3]}</dd></div>${c[4]?`<div><dt>문의</dt><dd><a href="tel:${c[4].replace(/\D/g,"")}">${c[4]}</a></dd></div>`:""}${c[5]?`<div><dt>주소</dt><dd>${c[5]}</dd></div>`:""}</dl></div>`).join("")).join(""):DC.map(d=>`<div class="dc"><h3>${d[0]}${d[1]?`<small>${d[1]}</small>`:""}</h3><p>${d[2]}</p></div>`).join("");
+ return hero+`<div class="wrap">${body}<div class="pager"><a class="ghost" href="#0">처음으로</a>${a<2?`<a href="#a2">온누리 사전</a>`:""}</div></div>`}
 function draw(){
- const n=parseInt(location.hash.slice(1))||0;
- nav.innerHTML=`<a href="#0" class="${n?"":"on"}">처음</a>`+L.map((l,i)=>`<a href="#${i+1}" class="${n==i+1?"on":""}">${i+1}강 ${l.ko}</a>`).join("");
+ const h=location.hash.slice(1),A=/^a[12]$/.test(h)?+h[1]:0,n=A?0:(parseInt(h)||0);
+ nav.innerHTML=`<a href="#0" class="${n||A?"":"on"}">처음</a>`+L.map((l,i)=>`<a href="#${i+1}" class="${n==i+1?"on":""}">${i+1}강 ${l.ko}</a>`).join("")+AP.map((x,a)=>`<a href="#a${a+1}" class="${A==a+1?"on":""}">부록${a+1} ${x.t}</a>`).join("");
  const on=nav.querySelector(".on");if(on)on.scrollIntoView({inline:"center",block:"nearest"});
- if(!n){app.innerHTML=`<div class="cover"><img src="${IMG.tree}" alt=""><div><h1>Holy Impact<br>대학 청년 새가족 교재</h1><p>온누리교회 대학청년부 · 7강 과정</p><a class="start" href="#1">1강 시작하기</a></div></div><div class="wrap"><p style="color:var(--sub);margin:0 0 8px">질문에 답을 적어 두면 이 기기에 저장됩니다.</p><div class="list">${L.map((l,i)=>`<a href="#${i+1}"><b>${i+1}</b><span>${l.ko} <small>${l.en}</small></span><em>${done(i)}/${l.qs.length}</em></a>`).join("")}</div></div>`;scrollTo(0,0);return}
+ if(A){app.innerHTML=APX(A);scrollTo(0,0);return}
+ if(!n){app.innerHTML=`<div class="cover"><img src="${IMG.tree}" alt=""><div><h1>Holy Impact<br>프로포즈</h1><p>온누리교회 대학청년부 · 새가족 교육</p><a class="start" href="#1">1강 시작하기</a></div></div><div class="wrap"><p style="color:var(--sub);margin:0 0 8px">질문에 답을 적어 두면 이 기기에 저장됩니다.</p><div class="list">${L.map((l,i)=>`<a href="#${i+1}"><b>${i+1}</b><span>${l.ko} <small>${l.en}</small></span><em>${done(i)}/${l.qs.length}</em></a>`).join("")}</div><p class="apt">부록</p><div class="list">${AP.map((a,i)=>`<a href="#a${i+1}"><b>+</b><span>${a.t}</span></a>`).join("")}</div></div>`;scrollTo(0,0);return}
  const i=n-1,l=L[i];
  app.innerHTML=`<div class="ph ${H[n]?"":"solid"} ${n==3?"flip":""}">${H[n]?`<img src="${IMG[H[n]]}" alt="">`:""}<div class="ph-in"><b>${n}</b><span>${l.en}<small>${l.ko}</small></span></div></div><div class="wrap">
- <div class="open"><small>마음 열기</small>${l.open}</div>${l.lm?LM():""}`+
- l.qs.map((q,j)=>`<section class="q"><p><i>${j+1}.</i>${q.q}</p>
- ${q.opts?q.opts.map((o,k)=>`<label class="opt"><input type="checkbox" data-o="${i}.${j}" value="${k}" ${JSON.parse(get(`o${i}.${j}`)||"[]").includes(k)?"checked":""}>${o}</label>`).join(""):""}
- <textarea data-a="${i}.${j}" aria-label="${j+1}번 답" placeholder="나의 생각을 적어 보세요">${esc(get(`a${i}.${j}`))}</textarea>
- ${(q.v||[]).map(v=>`<blockquote><b>${v[0]}</b> ${v[1]||""}</blockquote>`).join("")}
- ${q.note?`<blockquote>${q.note}</blockquote>`:""}</section>`).join("")+
- `<div class="share"><b>나눔</b><br>${l.share}${(l.vs||[]).map(v=>`<blockquote><b>${v[0]}</b> ${v[1]||""}</blockquote>`).join("")}</div>
+ <div class="open"><div class="heart"><svg viewBox="0 0 100 92" aria-hidden="true"><path d="M50 90C20 66 2 50 2 28 2 13 14 2 28 2c10 0 17 5 22 13C55 7 62 2 72 2c14 0 26 11 26 26 0 22-18 38-48 62z" fill="var(--or)"/></svg><span>마 음<br>열 기</span></div><p>${l.open}</p></div>${l.lm?LM():""}`+
+ l.qs.map((q,j)=>QS(i,j,q)).join("")+
+ `<div class="share"><span class="tag">나눔</span><p>${l.share}</p><textarea data-a="s${i}" placeholder="나누고 싶은 이야기를 적어 보세요">${esc(get("as"+i))}</textarea>${(l.vs||[]).map(v=>`<blockquote><b>${v[0]}</b> ${v[1]||""}</blockquote>`).join("")}</div>
  <div class="pager">${i?`<a class="ghost" href="#${n-1}">이전 강의</a>`:`<a class="ghost" href="#0">처음으로</a>`}${i<6?`<a href="#${n+1}">다음 강의</a>`:`<a href="#0">처음으로</a>`}</div></div>`;
  bindLM();scrollTo(0,0);
 }
 app.addEventListener("input",e=>{const t=e.target;
- if(t.dataset.a)set("a"+t.dataset.a,t.value);
+ if(t.dataset.a)set("a"+t.dataset.a,t.value);if(t.dataset.c)set("c"+t.dataset.c,t.value);
  if(t.dataset.o){const c=[...app.querySelectorAll(`[data-o="${t.dataset.o}"]:checked`)].map(x=>+x.value);set("o"+t.dataset.o,JSON.stringify(c))}});
+app.addEventListener("click",e=>{const b=e.target.closest("[data-i],[data-reset]"),g=b&&b.closest("[data-g]");if(!g)return;
+ const k=g.dataset.g,[i,j]=k.split(".").map(Number),q=L[i].qs[j];if(q.m=="plain")return;let a=gv(k);
+ if(b.dataset.reset!=null)a=[];else{const x=+b.dataset.i;if(a.includes(x))a=a.filter(y=>y!=x);else if(q.m!="apps"||a.length<3)a.push(x);else return}
+ set("r"+k,JSON.stringify(a));g.outerHTML=GRP(i,j,q)});
 addEventListener("hashchange",draw);draw();
 </script>
 </body>
