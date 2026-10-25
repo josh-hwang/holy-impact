@@ -143,7 +143,7 @@ function draw(){
  const n=parseInt(location.hash.slice(1))||0;
  nav.innerHTML=`<a href="#0" class="${n?"":"on"}">처음</a>`+L.map((l,i)=>`<a href="#${i+1}" class="${n==i+1?"on":""}">${i+1}강 ${l.ko}</a>`).join("");
  const on=nav.querySelector(".on");if(on)on.scrollIntoView({inline:"center",block:"nearest"});
- if(!n){app.innerHTML=`<div class="cover"><img src="${IMG.tree}" alt=""><div><h1>Holy Impact<br>새신자 교재</h1><p>온누리교회 대학청년부 · 7강 과정</p><a class="start" href="#1">1강 시작하기</a></div></div><div class="wrap"><p style="color:var(--sub);margin:0 0 8px">질문에 답을 적어 두면 이 기기에 저장됩니다.</p><div class="list">${L.map((l,i)=>`<a href="#${i+1}"><b>${i+1}</b><span>${l.ko} <small>${l.en}</small></span><em>${done(i)}/${l.qs.length}</em></a>`).join("")}</div></div>`;scrollTo(0,0);return}
+ if(!n){app.innerHTML=`<div class="cover"><img src="${IMG.tree}" alt=""><div><h1>Holy Impact<br>대학 청년 새가족 교재</h1><p>온누리교회 대학청년부 · 7강 과정</p><a class="start" href="#1">1강 시작하기</a></div></div><div class="wrap"><p style="color:var(--sub);margin:0 0 8px">질문에 답을 적어 두면 이 기기에 저장됩니다.</p><div class="list">${L.map((l,i)=>`<a href="#${i+1}"><b>${i+1}</b><span>${l.ko} <small>${l.en}</small></span><em>${done(i)}/${l.qs.length}</em></a>`).join("")}</div></div>`;scrollTo(0,0);return}
  const i=n-1,l=L[i];
  app.innerHTML=`<div class="ph ${H[n]?"":"solid"} ${n==3?"flip":""}">${H[n]?`<img src="${IMG[H[n]]}" alt="">`:""}<div class="ph-in"><b>${n}</b><span>${l.en}<small>${l.ko}</small></span></div></div><div class="wrap">
  <div class="open"><small>마음 열기</small>${l.open}</div>${l.lm?LM():""}`+
