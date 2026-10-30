@@ -94,6 +94,7 @@ button.ri{cursor:pointer}.ri.on{border-color:var(--or);background:var(--surf)}
 .dc{padding:18px 0;border-bottom:1px solid var(--line)}.dc h3{margin:0 0 6px;font:700 20px "Noto Serif KR",serif}.dc h3 small{color:var(--sub);font:400 14px "Noto Sans KR",sans-serif;margin-left:8px}.dc p{margin:0}
 .inf{font-size:15px;line-height:1.8}.inf h4{margin:22px 0 6px;font-size:16px}.inf p{margin:0 0 10px}.inf ul{margin:0 0 10px;padding-left:4px;list-style:none;color:var(--sub)}.share:has(p:empty){display:none}
 .sh4{margin:24px 0 4px;font-size:17px;font-weight:700}.bp{margin:6px 0 10px;font-size:15.5px}.kp{font-size:17px;font-weight:500;line-height:1.8;margin:24px 0 8px}
+.ph-in.apx{align-items:stretch;gap:18px}.ph-in.apx b{display:flex;align-items:center;align-self:stretch;font-size:30px;line-height:1;white-space:nowrap;padding:4px 18px 4px 0}.ph-in.apx span{line-height:1.25}.ph-in.apx small{margin-top:8px}
 </style>
 </head>
 <body>
@@ -194,7 +195,7 @@ function QS(i,j,q){const k=`${i}.${j}`,m=q.m||"",G=["rank","check","plain","apps
  if(m=="info")b=`<div class="inf">${q.html}</div>`;
  if(!G&&m!="areas"&&m!="info")b+=`<textarea data-a="${k}" aria-label="${j+1}번 답" placeholder="나의 생각을 적어 보세요">${esc(get("a"+k))}</textarea>`;
  return `<section class="q"><p class="qt"><i class="n">${j+1}</i>${q.q}</p>${b}${q.seq?SQ(k,q.seq):(q.v||[]).filter(v=>!refs.includes(v[0])).map(v=>`<blockquote><b>${v[0]}</b> ${v[1]||""}</blockquote>`).join("")}${q.note?`<blockquote>${q.note}</blockquote>`:""}${q.key?`<p class="kp">${q.key}</p>`:""}</section>${q.sh?SH(k,q.sh):""}`}
-const AP=[{t:"공동체 소개",en:"COMMUNITY"},{t:"온누리 사전",en:"DICTIONARY"}];
+const AP=[{t:"온누리 사전",en:"DICTIONARY"},{t:"공동체 소개",en:"COMMUNITY"}];
 const CG=[["서울",[
 ["하늘 공동체","대학부","세상 속에 복음의 진리를 전하는 복음의 공동체. 예수님을 가장 사랑하는 예수 바보를 양성하는 공동체","주일 오후 4:30 · 온누리교회 서빙고 두란노홀(신관 B1)","02-3215-3726","","www.facebook.com/groups/OnnuriHanul"],
 ["허브 공동체","대학부","거룩한 옷을 입고 즐거이 헌신함으로 새벽이슬과 같은 청년들을 세워나가는 예수바보 대학공동체","주일 오후 2:00 · 온누리교회 양재 기쁨홀","02-3215-3726","","www.facebook.com/groups/hubcommunity"],
@@ -220,28 +221,28 @@ const CG=[["서울",[
 ["강동 Promise 공동체","청년부","the 깊은 영성, the 아름다운 문화, the 낮은 섬김의 비전으로 하나님을 기쁘시게 하고 세상을 변화 시키는 청년들이 모인 성령공동체, 예배공동체입니다","주일 오후 2:00 · 온누리교회 강동 본당 12F","02-475-9686","서울시 강동구 천호3동 453-19 나비빌딩 12층","vision.onnuri.org/gd"],
 ["영종 WAY 공동체","","","주일 오후 2:00 · 온누리교회 영종 3층 백향목홀","","",""]]]];
 const DC=[
-["등반","","세상 속에 영향력 있는 크리스천으로 살기 위한 리더십을 훈련한다."],
+["WEB","Worship, Evangelization, Bible","인천 온누리교회 대학청년 공동체를 의미하며, Worship, Evangelization, Bible의 약자로 예배하는 공동체, 복음을 전하는 공동체, 말씀 중심의 공동체를 의미함. 또한 세상의 복음의 그물을 던지는 공동체로 중의적 의미를 가지고 있음"],
+["웨버","WEBer","인천 웹 공동체의 구성원"],
 ["순 모임","","온누리교회를 이루는 가장 기본적인 공동체. 보통 7-12명의 인원들로 구성되는 소그룹 모임."],
 ["순장","","순 모임의 인도자"],
 ["아웃리치","Outreach","단기간동안 선교현장에 나가서 선교사역에 동참하는 것. 주로 현지에서 장기간 사역하고 있는 선교사의 사역을 돕는 형태나 비전트립으로 이루어지고 있다."],
-["크블","","크리스마스 블레싱의 줄임말로, 매년 크리스마스에 주변 미자립/농어촌 교회를 방문하여 성탄의 기쁜 소식을 전하고, 예수님의 사랑을 나누는 아웃리치를 말함."],
+["크블","Christmas Blessing","크리스마스 블레싱의 줄임말로, 매년 크리스마스에 주변 미자립/농어촌 교회를 방문하여 성탄의 기쁜 소식을 전하고, 예수님의 사랑을 나누는 아웃리치를 말함."],
 ["엠씨","MC · Ministry Coordinator","교역자를 도와 공동체 사역을 진행하는 대학청년부 공동체 임원"],
 ["일대일 동반자","","일대일 제자양육에서 배우는 사람"],
 ["일대일 양육자","","일대일 제자양육에서 가르치는 사람"],
 ["에프에이","FA · Frontier Agency Movement","대학청년부에서 진행하는 새로운 패러다임의 단기선교훈련. 교역자와 훈련생들이 한 팀을 이루어 복음화율이 5%미만인 지역으로 나아가는 프로그램."],
 ["티피","TP · Turning Point","Acts29 비전빌리지에서 진행되는 단기 선교사 훈련제도. 훈련을 마친 후 선교지로 파송되어 1,2년간 사역한다."],
 ["화성","화요성령집회","화성(화요성령집회)은 매주 화요일 오후 7시 30분에 서빙고 본당에서 드리는 성령집회. 이 집회를 통해 예배드리는 모든 사람들이 사도행전에 나오는 모든 성령의 은사를 강력하게 체험하여 꿈과 환상을 보는 예배를 경험할 뿐만 아니라, 화성 전국투어를 통해 전국의 대학 캠퍼스와 미자립 교회의 예배 부흥을 꿈꾸며 섬기고 있다."],
-["바아","","바이블아카데미의 줄임말로 매년 상반기와 하반기 2회 개설되는 교육을 지칭하는 말이다. 균형잡힌 신앙을 소유한 성숙한 그리스도인을 양육하고, 비전에 헌신하는 헌신자로 양육하며, 세상 속에서 영향력 있는 크리스천 리더십으로 양육한다. 리더십 훈련과정, 성경 과정, 기독교 세계관 등 다양한 과정들이 개설된다."],
+["바아","Bible Academy","바이블아카데미의 줄임말로 매년 상반기와 하반기 2회 개설되는 교육을 지칭하는 말이다. 균형잡힌 신앙을 소유한 성숙한 그리스도인을 양육하고, 비전에 헌신하는 헌신자로 양육하며, 세상 속에서 영향력 있는 크리스천 리더십으로 양육한다. 리더십 훈련과정, 성경 과정, 기독교 세계관 등 다양한 과정들이 개설된다."],
 ["또래모임","","같은 생년(또래)이 함께 모여 교제하는 시간으로, 연 1~2회 진행하고 있다."],
 ["던브레이커스","","매주 수요일 오전 7시, 함께 하나님의 말씀을 나누는 모임"],
 ["주중중보기도","","매주 화요일 오후 8시에 모여 뜨겁게 공동체를 위해 기도하는 자리"],
-["WEBer","","인천 웹 공동체의 구성원"],
 ["캠유니티","CAMunity","CAM + unity(연합)의 줄임말로, 매월 캠퍼스의 복음화를 위해 함께 모여 예배하는 자리"],
 ["캠퍼스를 깨우는 큐티모임","","각 캠퍼스별로 지정된 시간/장소에 모여 하나님의 말씀을 묵상하고 나누는 모임으로 연세대, 인하대, 인천대, 글로벌캠퍼스가 진행되고 있음"]];
 function APX(a){const x=AP[a-1],lk=w=>`<a href="https://${w.split(" ")[0]}" target="_blank" rel="noopener">${w}</a>`;
- const hero=`<div class="ph solid"><div class="ph-in"><b style="font-size:34px;line-height:1.1">부록<br>${a}</b><span>${x.t}<small>${x.en}</small></span></div></div>`;
- const body=a==1?CG.map(g=>`<div class="gh">${g[0]}</div>`+g[1].map(c=>`<div class="cm"><h3>${c[0]}${c[1]?`<span class="dp">${c[1]}</span>`:""}</h3><dl><div><dt>예배</dt><dd>${c[3]}</dd></div>${c[4]?`<div><dt>문의</dt><dd><a href="tel:${c[4].replace(/\D/g,"")}">${c[4]}</a></dd></div>`:""}${c[5]?`<div><dt>주소</dt><dd>${c[5]}</dd></div>`:""}</dl></div>`).join("")).join(""):DC.map(d=>`<div class="dc"><h3>${d[0]}${d[1]?`<small>${d[1]}</small>`:""}</h3><p>${d[2]}</p></div>`).join("");
- return hero+`<div class="wrap">${body}<div class="pager"><a class="ghost" href="#0">처음으로</a>${a<2?`<a href="#a2">온누리 사전</a>`:""}</div></div>`}
+ const hero=`<div class="ph solid"><div class="ph-in apx"><b>부록 ${a}</b><span>${x.t}<small>${x.en}</small></span></div></div>`;
+ const body=a==2?CG.map(g=>`<div class="gh">${g[0]}</div>`+g[1].map(c=>`<div class="cm"><h3>${c[0]}${c[1]?`<span class="dp">${c[1]}</span>`:""}</h3><dl><div><dt>예배</dt><dd>${c[3]}</dd></div>${c[4]?`<div><dt>문의</dt><dd><a href="tel:${c[4].replace(/\D/g,"")}">${c[4]}</a></dd></div>`:""}${c[5]?`<div><dt>주소</dt><dd>${c[5]}</dd></div>`:""}</dl></div>`).join("")).join(""):DC.map(d=>`<div class="dc"><h3>${d[0]}${d[1]?`<small>${d[1]}</small>`:""}</h3><p>${d[2]}</p></div>`).join("");
+ return hero+`<div class="wrap">${body}<div class="pager"><a class="ghost" href="#0">처음으로</a>${a<2?`<a href="#a2">공동체 소개</a>`:""}</div></div>`}
 function draw(){
  const h=location.hash.slice(1),A=/^a[12]$/.test(h)?+h[1]:0,n=A?0:(parseInt(h)||0);
  nav.innerHTML=`<a href="#0" class="${n||A?"":"on"}">처음</a>`+L.map((l,i)=>`<a href="#${i+1}" class="${n==i+1?"on":""}">${i+1}강 ${l.ko}</a>`).join("")+AP.map((x,a)=>`<a href="#a${a+1}" class="${A==a+1?"on":""}">부록${a+1} ${x.t}</a>`).join("");
