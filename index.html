@@ -66,7 +66,7 @@ main{max-width:none;padding:0 0 80px}
 .lg{display:flex;gap:6px;margin:6px 0}
 .lg button{position:relative;flex:1;padding:4px 0;border-radius:6px;border:1px solid var(--line);background:none;color:var(--ink);font:inherit;font-size:15px;line-height:1;cursor:pointer}
 .lg button::after{content:"";position:absolute;inset:-6px 0}
-.lg .bp.on{background:#c8520e;color:#fff;border-color:transparent}.lg .bs.on{background:#1f6fc0;color:#fff;border-color:transparent}
+.lg .lbp.on{background:#c8520e;color:#fff;border-color:transparent}.lg .lbs.on{background:#1f6fc0;color:#fff;border-color:transparent}
 .hint{color:var(--sub);margin:8px 0 12px}.lm>p.hint{font-size:15px;font-weight:400}
 .lm>p:first-child{font-size:24px}.lm textarea{font-size:16px}
 .q>p.qt{display:flex;gap:12px;align-items:flex-start}
@@ -164,7 +164,7 @@ const esc=s=>s.replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
 const done=i=>L[i].qs.filter((_,j)=>get(`a${i}.${j}`).trim()||get(`c${i}.${j}`)||(get(`r${i}.${j}`)||"[]")!="[]").length;
 const AG=["10","15","20","25","30","35","현재"],LC={ph:"#e8691a",sp:"#2783de"};let lmA="ph";
 const lmv=(r,i)=>{const v=get(`lm.${r}.${i}`);return v===""?(r=="ph"?60:40):+v};
-function LM(){lmA="ph";return `<section class="q lm"><p style="margin:0"><i style="font-style:normal;color:var(--or)">Life Map</i> 나의 인생 그래프</p><div class="lg"><button class="bp on" data-lr="ph">육적인 삶</button><button class="bs" data-lr="sp">영적인 삶</button></div><svg id="lms" viewBox="0 0 700 440" role="img" aria-label="인생 그래프"></svg><p class="hint">위에서 선택한 삶의 점을 위아래로 끌어서 그려 보세요.</p><textarea data-a="lm" placeholder="인생의 전환점이 된 순간을 적어 보세요">${esc(get("alm"))}</textarea></section>`}
+function LM(){lmA="ph";return `<section class="q lm"><p style="margin:0"><i style="font-style:normal;color:var(--or)">Life Map</i> 나의 인생 그래프</p><div class="lg"><button class="lbp on" data-lr="ph">육적인 삶</button><button class="lbs" data-lr="sp">영적인 삶</button></div><svg id="lms" viewBox="0 0 700 440" role="img" aria-label="인생 그래프"></svg><p class="hint">위에서 선택한 삶의 점을 위아래로 끌어서 그려 보세요.</p><textarea data-a="lm" placeholder="인생의 전환점이 된 순간을 적어 보세요">${esc(get("alm"))}</textarea></section>`}
 function drawLM(){const s=$("#lms");if(!s)return;const X=i=>80+i*95,Y=v=>400-v*3.6;
  let g=`${[40,130,220,310,400].map(y=>`<line x1="60" x2="690" y1="${y}" y2="${y}" stroke="var(--line)" ${y==220?'stroke-dasharray="4 4"':""}/>`).join("")}<text x="4" y="50" font-size="18" fill="var(--sub)">행복</text><text x="4" y="396" font-size="18" fill="var(--sub)">힘듦</text>`;
  AG.forEach((a,i)=>g+=`<text x="${X(i)}" y="428" font-size="18" text-anchor="middle" fill="var(--sub)">${a}${i<6?"세":""}</text>`);
